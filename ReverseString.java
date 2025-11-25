@@ -7,7 +7,7 @@ public class ReverseString {
         char[] arr=s.toCharArray();
         char temp =arr[l];
         arr[l] = arr[r];
-        arr[right] = temp;
+        arr[r]=temp;
         s=new String(arr);
         return reverse(s, l + 1, r - 1);
     }
@@ -18,4 +18,5 @@ public class ReverseString {
         System.out.println("Reversed: " + reversed);
     }
 }
+
 
